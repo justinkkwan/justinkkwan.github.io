@@ -1,0 +1,199 @@
+<html>
+<head>
+<meta charset="UTF-8">
+	<style>
+		body{
+			max-width:			50em;
+			font-family:		Calibri light;
+			/*margin-top:			100px;*/
+			/*margin-left:		0px;
+			margin-right:		0px;*/
+			margin:			auto;
+		}
+		.mainHeader{
+			text-align:			center;
+			background-color:	#c6d8ec;
+			font-family:		Calibri;
+			/*padding-top:		10;*/
+			padding-bottom:		6;
+		}
+		.subHeader{
+			font-size:			1.5em;
+			color:				#000080;
+			/*background-color:	#CCEEFF;*/
+			width:				100%;
+			padding-top:		5;
+			padding-bottom:		5;
+			border-bottom:		5px solid #000080;
+		}
+		.miniHeader{
+			font-size:			1.2em;
+			width:				100%;
+		}
+		.dateFontSize{
+			font-size:			0.7em;
+		}
+		.newSection{
+			padding-top:		10;
+			padding-bottom:		10;
+		}
+		ul{
+			margin-top:			0;
+			margin-bottom:		0;
+		}
+		td{
+			vertical-align:		top;
+		}
+		.mainResume{
+			font-size:			0.8em;
+			width:				98%;
+			margin-left:		1%;
+			margin-right:		1%;
+		}
+	</style>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+<div>
+	<!-- <div style="display:block;height:70"><img src="C:\Users\Justin Kwan\Pictures\ResumeHeader.png" style="height:70;float:right"/></div> -->
+	<div class="mainHeader" style="margin-top:0">
+		<div style="font-size:2.2em">JUSTIN KWAN</div>
+		<div style="font-size:1em">YEAR 3, COMPUTER SCIENCE MAJOR</div>
+		<!-- <table style="width:100%">
+			<tr>
+				<td style="text-align:right"> -->
+					<div style="font-size:1em"><i class="fab fa-github"></i> <a href="https://github.com/justinkkwan">justinkkwan</a></div>
+				<!-- </td>
+				<td> -->
+					<div style="font-size:1em"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/justinkkwan/">justinkkwan</a></div>
+				<!-- </td>
+			</tr>
+		</table> -->
+	</div>
+</div>
+<table class="mainResume">
+<tr><td style="width:50%">
+<div class="newSection">
+	<div class="subHeader">SKILLS</div>
+	<table style="width:100%;font-size:1em">
+		<tr>
+			<td style="width:30%">PROGRAMMING:</td>
+			<td style="width:70%">C, C++, C#, DrRacket, Java, Flex/Actionscript, Javascript, TypeScript, 4D, MySQL, MSSQL</td>
+		</tr>
+		<tr>
+			<td>TESTING:</td>
+			<td>JUnit, GDB</td>
+		</tr>
+		<tr>
+			<td>TOOLS/FRAMEWORK:</td>
+			<td>Intellij, CodeBlocks, Android Studio, Flash Builder, Git, Jira</td>
+		</tr>
+		<tr>
+			<td>WEB:</td>
+			<td>HTML, CSS, PHP, Angular2, Node.js</td>
+		</tr>
+	</table>
+</div>
+<div class="newSection">
+<div class="subHeader">EDUCATION</div>
+University of British Columbia<br />
+Major in Computer Science, Software Engineering Option<br />
+Grade Point Average: 80.7%
+</div>
+<div class="newSection">
+	<div class="subHeader">TECHNICAL PROJECTS</div>
+	<div class="miniHeader">UBC Pair/Room Data Query Engine · <i>Academic Project</i></div>
+	Sep 2017 to Nov 2017
+	<ul>
+		<li>Created a RESTful API with a partner that would accept data for UBC grades (in JSON) or UBC rooms (in HTML) and store it on disk</li>
+		<li>Validated and parsed queries by following an AST that we created from a given EBNF</li>
+		<li>Included columns with data to be retrieved with GET requests and ordered execution of code so that these fields could be ordered by</li>
+		<li>Created sort methods on the fly to loop through all the data only once even when sorting by multiply parameters</li>
+		</li>
+	</ul>
+	Technologies used: TypeScript, JavaScript, ES6, Promises, Node.js, Github
+	<br /><br />
+	<div class="miniHeader">Tetris Clone · <i>Personal Project</i></div>
+	May 2016 to Aug 2016
+	<ul>
+		<li>Made a copy of the popular title "Tetris" with all the basic functionalities</li>
+		<li>Created boolean arrays representing 4 unique piece states to preserve the rotational mechanics in Guideline Tetris</li>
+		<li>Modified the InputMap and ActionMap to take keyboard inputs and turn on and off values in a global boolean array so that graphics, keyboard input, and input handling could be done separately</li>
+		<li>Used Exception Handling to attempt to rotate pieces when keys are pressed</li>
+	</ul>
+	Technologies used: Java, JFrame, JUnit Testing, Github
+	<br /><br />
+	<div class="miniHeader">Puzzle Solver · <i>Academic Project</i></div>
+	Mar 2016 to Apr 2016
+<ul>
+	<li>Worked with a peer to implement brute-force searches with breadth-first search, depth-first search, and best-first search (priority queue)</li>
+	<li>Made our own implementation of a binary heap to efficiently add and remove items from the priority queue</li>
+	<li>Implemented our own AVL Tree, Hashtable with linear probing, and Hashtable with double hashing to compare the difference in run-times with different dictionary implementations</li>
+</ul>
+	Technologies used: C++
+	<!--<br /><br />
+	<div class="miniHeader">Mind the Gap · Academic Project</i></div>
+	Aug 2015
+<ul>
+	<li>Completed an Android App by implementing a model of the London Tube System</li>
+	<li>Implemented methods to parse data (including arrive times, station names, and travel directions) from JSON</li>
+	<li>Generated URLs to look up real time data from online APIs</li>
+	<li>Employed design patterns such as the Singleton Pattern, Iterable Pattern, and others to cleanly implement a model of the London Tube System (public transit)</li>
+</ul>
+	Technologies used: Java, JUnit Testing, JSON Parsing Library, OOD, OOP
+</div>-->
+</td><td style="width:50%">
+<div class="newSection">
+<div class="subHeader">EMPLOYMENT</div>
+<div class="miniHeader">BuildDirect · <i>Software Developer</i></div>
+May 2018 to Present 
+<ul>
+	<li>Extended existing C# code to give a new response when items ordered are freshly out of stock and adjusted the AngularJS code to handle the new error response</li>
+	<li>Updated a private npm package to add a function that decodes a JWT token and return the user's id to differentiate actual customers from our impersonating sales associates</li>
+</ul>
+<br />
+<div class="miniHeader">Mitacs · <i>Junior Programmer</i></div>
+Sep 2016 to Apr 2017
+<ul>
+	<li>Completed a "Todo List" module within the company's "Mitacs Online" system to track applications and their sub components and identify if they are not proceeding as expected. Many different methods on the 4D database/server are used to detect potentially declining applications and Flex/Actionscript code was written for the client-side</li>
+	<li>Inserted string commands to an RTF file viewed as plain text so that I could later have 4D replace these commands with proper strings such as dates, names, formatted numbers/date, and calculated data</li>
+	<li>Used Angular 2 and NodeJS to create the Globalink Faculty Application Portal for University Professors to apply their projects in hopes to find graduate students</li>
+	<li>Logged bugs found when testing our Pre-Internship Logistics platform with Jira and TestRail to keep organized lists of bugs
+</ul>
+<br />
+<div class="miniHeader">UBC Department of Computer Science· <i>Teaching Assistant</i></div>
+Feb 2016 to Aug 2016 
+<ul>
+	<li>Graded exams in such a way to maintain consistency with other markers in evaluation of student's skills and in line with the intentions of the professor
+	<li>Explained to students what was happening in the programs they wrote and showed them how to proceed in finishing them</li>
+	<li>Co-conducted lab sessions for students to apply coding practices taught in lecture with guidance our help</li>
+</ul>
+</div>
+<div class="newSection">
+<div class="subHeader">TECHNICAL EXTRACURRICULAR ACTIVITIES</div>
+<div class="miniHeader">NWHacks 2017 · <i>Hackathon Competitor</i></div>
+Mar 2017
+<ul>
+	<li>Wrote the back-end to a program for storing fast food orders using NodeJS and CockroachDB</li>
+	<li>Was awarded hoodies for good usage of CockroachDB having seen it for the first time there</li>
+</ul>
+<br />
+<div class="miniHeader">LumoHacks · <i>Hackathon Competitor</i></div>
+Sep 2016
+<ul>
+	<!--<li>Met new people and collaborated with them to learn how to make Android applications for the first time</li>-->
+	<li>Split work to complete an Android application prototype in 24 hours resulting in a functioning application that took pictures and measured angles after capturing a photo</li>
+	<li>Utilized the device's Gyroscope to ensure that the camera was properly angled before allowing the user to take a photo</li>
+</ul>
+</div>
+<!--<div class="newSection">
+<div class="subHeader">INTERESTS/ACTIVITIES</div>
+<div class="miniHeader">UBC Thunder Dragon Boating Club · Paddler</div>
+Sep 2015 to Aug 2016
+Paddle for the recreational team<br />
+Came in 14th overall out of 150 teams at the Concord Pacific Vancouver Dragon Boat Festival
+</div>-->
+</td>
+</table>
+</body>
+</html>
