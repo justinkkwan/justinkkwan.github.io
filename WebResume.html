@@ -5,14 +5,15 @@
 		body{
 			max-width:			50em;
 			font-family:		Calibri light;
-			/*margin-top:			100px;*/
+			padding-top:			30px;
 			/*margin-left:		0px;
 			margin-right:		0px;*/
-			margin:			auto;
+			margin:				auto;
 		}
 		.mainHeader{
 			text-align:			center;
-			background-color:	#c6d8ec;
+			color:				#000080;
+			/*background-color:	#c6d8ec;*/
 			font-family:		Calibri;
 			/*padding-top:		10;*/
 			padding-bottom:		6;
@@ -24,7 +25,7 @@
 			width:				100%;
 			padding-top:		5;
 			padding-bottom:		5;
-			border-bottom:		5px solid #000080;
+			border-bottom:		3px solid #000080;
 		}
 		.miniHeader{
 			font-size:			1.2em;
@@ -45,7 +46,7 @@
 			vertical-align:		top;
 		}
 		.mainResume{
-			font-size:			0.8em;
+			font-size:			0.9em;
 			width:				98%;
 			margin-left:		1%;
 			margin-right:		1%;
@@ -77,28 +78,28 @@
 	<div class="subHeader">SKILLS</div>
 	<table style="width:100%;font-size:1em">
 		<tr>
-			<td style="width:30%">PROGRAMMING:</td>
-			<td style="width:70%">C, C++, C#, DrRacket, Java, Flex/Actionscript, Javascript, TypeScript, 4D, MySQL, MSSQL</td>
+			<td style="width:20%">LANGUAGES:</td>
+			<td style="width:80%"><span style="font-weight:bold">Java, C#, TypeScript, JavaScript, Node.js</span>, MySQL, MSSQL, C, C++, 4D</td>
 		</tr>
 		<tr>
 			<td>TESTING:</td>
-			<td>JUnit, GDB</td>
+			<td><span style="font-weight:bold">JUnit, XUnit</span>, NUnit</td>
 		</tr>
 		<tr>
-			<td>TOOLS/FRAMEWORK:</td>
-			<td>Intellij, CodeBlocks, Android Studio, Flash Builder, Git, Jira</td>
+			<td>TOOLS:</td>
+			<td><span style="font-weight:bold">Jira, Git, Jenkins</span>, AWS Lambda, AWS S3, Trello</td>
 		</tr>
-		<tr>
+		<!--<tr>
 			<td>WEB:</td>
 			<td>HTML, CSS, PHP, Angular2, Node.js</td>
-		</tr>
+		</tr>-->
 	</table>
 </div>
 <div class="newSection">
 <div class="subHeader">EDUCATION</div>
 University of British Columbia<br />
 Major in Computer Science, Software Engineering Option<br />
-Grade Point Average: 80.2%
+Grade Point Average: 80.5%
 </div>
 <div class="newSection">
 	<div class="subHeader">TECHNICAL PROJECTS</div>
@@ -123,50 +124,37 @@ Grade Point Average: 80.2%
 	</ul>
 	Technologies used: Java, JFrame, JUnit Testing, Github
 	<br /><br />
-	<div class="miniHeader">Puzzle Solver · <i>Academic Project</i></div>
+	<!--<div class="miniHeader">Puzzle Solver · <i>Academic Project</i></div>
 	Mar 2016 to Apr 2016
 <ul>
 	<li>Worked with a peer to implement brute-force searches with breadth-first search, depth-first search, and best-first search (priority queue)</li>
 	<li>Made our own implementation of a binary heap to efficiently add and remove items from the priority queue</li>
 	<li>Implemented our own AVL Tree, Hashtable with linear probing, and Hashtable with double hashing to compare the difference in run-times with different dictionary implementations</li>
 </ul>
-	Technologies used: C++
-	<!--<br /><br />
-	<div class="miniHeader">Mind the Gap · Academic Project</i></div>
-	Aug 2015
-<ul>
-	<li>Completed an Android App by implementing a model of the London Tube System</li>
-	<li>Implemented methods to parse data (including arrive times, station names, and travel directions) from JSON</li>
-	<li>Generated URLs to look up real time data from online APIs</li>
-	<li>Employed design patterns such as the Singleton Pattern, Iterable Pattern, and others to cleanly implement a model of the London Tube System (public transit)</li>
-</ul>
-	Technologies used: Java, JUnit Testing, JSON Parsing Library, OOD, OOP
-</div>-->
+	Technologies used: C++-->
 </td><td style="width:50%">
 <div class="newSection">
 <div class="subHeader">EMPLOYMENT</div>
 <div class="miniHeader">BuildDirect · <i>Software Developer</i></div>
 May 2018 to Dec 2018 
 <ul>
-	<li>Extended existing C# code to give a new response when items ordered are freshly out of stock and adjusted the AngularJS code to handle the new error response</li>
-	<li>Updated a private npm package to add a function that decodes a JWT token and return the user's id to differentiate actual customers from our impersonating sales associates</li>
+	<li>Fixed a critical bug in the C#-based Order Management System that would allow insufficiently stocked items to be sold and updated the AngularJS frontend accordingly.</li>
+	<li>Updated an npm package to fetch a user's id from the JWT for more accurate user tracking.</li>
 </ul>
 <br />
 <div class="miniHeader">Mitacs · <i>Junior Programmer</i></div>
 Sep 2016 to Apr 2017
 <ul>
-	<li>Completed a "Todo List" module within the company's "Mitacs Online" system to track applications and their sub components and identify if they are not proceeding as expected. Many different methods on the 4D database/server are used to detect potentially declining applications and Flex/Actionscript code was written for the client-side</li>
-	<li>Inserted string commands to an RTF file viewed as plain text so that I could later have 4D replace these commands with proper strings such as dates, names, formatted numbers/date, and calculated data</li>
-	<li>Used Angular 2 and NodeJS to create the Globalink Faculty Application Portal for University Professors to apply their projects in hopes to find graduate students</li>
-	<li>Logged bugs found when testing our Pre-Internship Logistics platform with Jira and TestRail to keep organized lists of bugs
+	<li>Wrote a new module to track applications and identify their progression. Database queries were made to find problematic records, and a Flash-based frontend was made to view them.</li>
+	<li>Automated the creation of .rtf documents that were sent out to successful applicants.</li>
+	<li>Used Angular 2 and NodeJS to create the Globalink Faculty Application Portal so that University Professors could submit their potential projects</li>
 </ul>
 <br />
 <div class="miniHeader">UBC Department of Computer Science· <i>Teaching Assistant</i></div>
 Feb 2016 to Aug 2016 
 <ul>
-	<li>Graded exams in such a way to maintain consistency with other markers in evaluation of student's skills and in line with the intentions of the professor
-	<li>Explained to students what was happening in the programs they wrote and showed them how to proceed in finishing them</li>
-	<li>Co-conducted lab sessions for students to apply coding practices taught in lecture with guidance our help</li>
+	<li>Graded exams, labs, and homework while maintaining consistency with other markers
+	<li>Explained to students what was happening in the programs they wrote and how to finish them</li>
 </ul>
 </div>
 <div class="newSection">
@@ -175,15 +163,14 @@ Feb 2016 to Aug 2016
 Mar 2017
 <ul>
 	<li>Wrote the back-end to a program for storing fast food orders using NodeJS and CockroachDB</li>
-	<li>Was awarded hoodies for good usage of CockroachDB having seen it for the first time there</li>
 </ul>
 <br />
 <div class="miniHeader">LumoHacks · <i>Hackathon Competitor</i></div>
 Sep 2016
 <ul>
 	<!--<li>Met new people and collaborated with them to learn how to make Android applications for the first time</li>-->
-	<li>Split work to complete an Android application prototype in 24 hours resulting in a functioning application that took pictures and measured angles after capturing a photo</li>
-	<li>Utilized the device's Gyroscope to ensure that the camera was properly angled before allowing the user to take a photo</li>
+	<li>Split work to complete an Android application prototype in 24 hours resulting in a functioning application that took pictures and allowed for angle mesurements over the photo</li>
+	<li>Utilized the device's Gyroscope to ensure that the camera was properly angled before taking a photo</li>
 </ul>
 </div>
 <!--<div class="newSection">
