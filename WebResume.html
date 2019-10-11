@@ -4,28 +4,28 @@
 	<style>
 		body{
 			max-width:			50em;
-			font-family:		Calibri light;
-			padding-top:			30px;
-			/*margin-left:		0px;
-			margin-right:		0px;*/
 			margin:				auto;
+			font-family:		Calibri light;
+			/*margin-top:			10px;
+			margin-left:		0px;
+			margin-right:		0px;*/
 		}
 		.mainHeader{
 			text-align:			center;
-			color:				#000080;
+			color:				#000000;
 			/*background-color:	#c6d8ec;*/
 			font-family:		Calibri;
-			/*padding-top:		10;*/
+			padding-top:		10;
 			padding-bottom:		6;
 		}
 		.subHeader{
 			font-size:			1.5em;
-			color:				#000080;
+			color:				#000000;
 			/*background-color:	#CCEEFF;*/
 			width:				100%;
 			padding-top:		5;
 			padding-bottom:		5;
-			border-bottom:		3px solid #000080;
+			border-bottom:		3px solid #000000;
 		}
 		.miniHeader{
 			font-size:			1.2em;
@@ -51,6 +51,10 @@
 			margin-left:		1%;
 			margin-right:		1%;
 		}
+		.plainLink{
+			color:				#000000;
+			text-decoration:	none;
+		}
 	</style>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
@@ -60,16 +64,26 @@
 	<div class="mainHeader" style="margin-top:0">
 		<div style="font-size:2.2em">JUSTIN KWAN</div>
 		<div style="font-size:1em">YEAR 4, COMPUTER SCIENCE MAJOR</div>
-		<!-- <table style="width:100%">
+		<!--<div style="font-size:0.9em">Expected completion: <span style="font-weight: bold">Dec 2019</span></div>-->
+		<table style="width:100%">
 			<tr>
-				<td style="text-align:right"> -->
-					<div style="font-size:1em"><i class="fab fa-github"></i> <a href="https://github.com/justinkkwan">justinkkwan</a></div>
-				<!-- </td>
-				<td> -->
-					<div style="font-size:1em"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/justinkkwan/">justinkkwan</a></div>
-				<!-- </td>
+				<!--<td style="text-align:right; width:49%">
+					<div style="font-size:1em; color:#000000">778 238 9606 <i class="fas fa-phone"></i></div>
+				</td>
+				<td style="text-align:right; width:2%"></td>-->
+				<td colspan="3" >
+					<div style="font-size:1em; color:#000000; text-align: center;"><i class="fas fa-envelope"></i> justinkkwan@alumni.ubc.ca</div>
+				</td>
 			</tr>
-		</table> -->
+			<tr>
+				<td style="text-align:right">
+					<div style="font-size:1em; color:#000000"><i class="fab fa-github"></i> <a class="plainLink" href="https://github.com/justinkkwan">justinkkwan</a> <!--justinkkwan--></div>
+				</td>
+				<td>
+					<div style="font-size:1em; color:#000000"><i class="fab fa-linkedin"></i> <a class="plainLink" href="https://www.linkedin.com/in/justinkkwan/">justinkkwan</a><!--justinkkwan--></div>
+				</td>
+			</tr>
+		</table>
 	</div>
 </div>
 <table class="mainResume">
@@ -79,7 +93,7 @@
 	<table style="width:100%;font-size:1em">
 		<tr>
 			<td style="width:20%">LANGUAGES:</td>
-			<td style="width:80%"><span style="font-weight:bold">Java, C#, TypeScript, JavaScript, Node.js</span>, MySQL, MSSQL, C, C++, 4D</td>
+			<td style="width:80%"><span style="font-weight:bold">Java, C#, TypeScript, JavaScript, Node.js, .NET</span>, MySQL, MSSQL, C, C++, 4D</td>
 		</tr>
 		<tr>
 			<td>TESTING:</td>
@@ -99,7 +113,8 @@
 <div class="subHeader">EDUCATION</div>
 University of British Columbia<br />
 Major in Computer Science, Software Engineering Option<br />
-Grade Point Average: 80.5%
+Grade Point Average: 80.5%<br />
+<span style="font-weight:bold">Expected Completion: Dec 2019</span>
 </div>
 <div class="newSection">
 	<div class="subHeader">TECHNICAL PROJECTS</div>
@@ -109,7 +124,7 @@ Grade Point Average: 80.5%
 		<li>Created a RESTful API with a partner that would accept data for UBC grades (in JSON) or UBC rooms (in HTML) and store it on disk</li>
 		<li>Validated and parsed queries by following an AST that we created from a given EBNF</li>
 		<li>Included columns with data to be retrieved with GET requests and ordered execution of code so that these fields could be ordered by</li>
-		<li>Created sort methods on the fly to loop through all the data only once even when sorting by multiply parameters</li>
+		<li>Created sort methods on the fly to loop through all the data only once even when sorting by multiple parameters</li>
 		</li>
 	</ul>
 	Technologies used: TypeScript, JavaScript, ES6, Promises, Node.js, Github
@@ -118,9 +133,9 @@ Grade Point Average: 80.5%
 	May 2016 to Aug 2016
 	<ul>
 		<li>Made a copy of the popular title "Tetris" with all the basic functionalities</li>
-		<li>Created boolean arrays representing 4 unique piece states to preserve the rotational mechanics in Guideline Tetris</li>
+		<li>Created a 2D array representing 4 unique piece states to preserve the rotational mechanics in Guideline Tetris</li>
 		<li>Modified the InputMap and ActionMap to take keyboard inputs and turn on and off values in a global boolean array so that graphics, keyboard input, and input handling could be done separately</li>
-		<li>Used Exception Handling to attempt to rotate pieces when keys are pressed</li>
+		<li>Used Exception Handling when attempting to rotate pieces so that the piece could shift to its environment</li>
 	</ul>
 	Technologies used: Java, JFrame, JUnit Testing, Github
 	<br /><br />
@@ -140,6 +155,7 @@ May 2018 to Dec 2018
 <ul>
 	<li>Fixed a critical bug in the C#-based Order Management System that would allow insufficiently stocked items to be sold and updated the AngularJS frontend accordingly.</li>
 	<li>Updated an npm package to fetch a user's id from the JWT for more accurate user tracking.</li>
+	<li>Created an AWS Lambda function to relay order data from new systems into existing ones</li>
 </ul>
 <br />
 <div class="miniHeader">Mitacs · <i>Junior Programmer</i></div>
@@ -147,10 +163,10 @@ Sep 2016 to Apr 2017
 <ul>
 	<li>Wrote a new module to track applications and identify their progression. Database queries were made to find problematic records, and a Flash-based frontend was made to view them.</li>
 	<li>Automated the creation of .rtf documents that were sent out to successful applicants.</li>
-	<li>Used Angular 2 and NodeJS to create the Globalink Faculty Application Portal so that University Professors could submit their potential projects</li>
+	<li>Used Angular 2 and Node.js to create the Globalink Faculty Application Portal so that University Professors could submit their potential projects</li>
 </ul>
 <br />
-<div class="miniHeader">UBC Department of Computer Science· <i>Teaching Assistant</i></div>
+<div class="miniHeader">UBC Department of Computer Science · <i>Teaching Assistant</i></div>
 Feb 2016 to Aug 2016 
 <ul>
 	<li>Graded exams, labs, and homework while maintaining consistency with other markers
@@ -162,14 +178,14 @@ Feb 2016 to Aug 2016
 <div class="miniHeader">NWHacks 2017 · <i>Hackathon Competitor</i></div>
 Mar 2017
 <ul>
-	<li>Wrote the back-end to a program for storing fast food orders using NodeJS and CockroachDB</li>
+	<li>Wrote the back-end to a program for storing fast food orders using Node.js and CockroachDB</li>
 </ul>
 <br />
 <div class="miniHeader">LumoHacks · <i>Hackathon Competitor</i></div>
 Sep 2016
 <ul>
 	<!--<li>Met new people and collaborated with them to learn how to make Android applications for the first time</li>-->
-	<li>Split work to complete an Android application prototype in 24 hours resulting in a functioning application that took pictures and allowed for angle mesurements over the photo</li>
+	<li>Completed an Android application prototype in 24 hours resulting in a functioning application that took pictures and allowed for angle measurements over the photo</li>
 	<li>Utilized the device's Gyroscope to ensure that the camera was properly angled before taking a photo</li>
 </ul>
 </div>
